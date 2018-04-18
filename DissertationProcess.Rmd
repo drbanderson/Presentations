@@ -1,0 +1,182 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    css: http://www.drbanderson.com/myteaching/presentationstyle.css
+    theme: night 
+    transition: slide
+    fig_width: 6.5
+    fig_height: 4.5
+    reveal_options:
+      center: true
+      slideNumber: true
+      history: false
+      highlight: zenburn
+      progress: true
+      hideAddressBar: true
+---
+
+## {data-background=#FFFFFF}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+options(knitr.table.format = "html") 
+```
+
+<br>
+<span style="color:#463E3F;font-weight:bold">Getting Through The Gauntlet</span>
+<br>
+<br>
+<span style="color:#463E3F">
+Managing the Dissertation Process
+<br>  
+<small>
+Brian S. Anderson, Ph.D.  
+Assistant Professor  
+Department of Global Entrepreneurship & Innovation  
+andersonbri@umkc.edu
+</small>
+</span>
+<br>  
+<img src="http://www.drbanderson.com/images/RIEILogo.png" width="500" height="83" alt="RIEI Logo">  
+<span style="color:#463E3F"><small><small>&#169; 2018 Brian S. Anderson</small></small></span>
+
+## 
+
+**Guiding Principles**
+
+##
+
+Your dissertation is **VERY** important to you.
+
+To others, not so much.
+
+## 
+
+The best dissertation is a **DONE** dissertation.
+
+## 
+
+Successfully completing the dissertation demonstrates your fitness to conduct original scientific research in the entrepreneurship and innovation domain.
+
+That's it.
+
+##
+
+This means that the dissertation *should not* be...
+
+- The best work you ever do
+
+- A grand theory of the firm
+
+- Win you the first Nobel for an entrepreneurship researcher
+
+##
+
+A dissertation is really just a regular paper, but longer.
+
+## 
+
+**Bloch School/UMKC Logistics**
+
+- Dissertation-related forms available on Slack
+
+- Plan on having a rough-draft of your proposal to your Chair by Dec of your third year
+
+- Proposal defense ideally at the end of your third year
+
+- Committee makeup
+
+##
+
+**Things To Sweat**
+
+- Your topic
+
+- Your Chair
+
+- Your workflow
+
+- Research design and timelines
+
+- Your proposal
+
+##
+
+**Things NOT To Sweat**
+
+- The rest of your committee
+
+- Money (maybe)
+
+- Is my dissertation going to get published in a journal?
+
+##
+
+**Dissertation Formats**
+
+Manuscript vs. Three-paper model
+
+## 
+
+**Choosing a Topic**
+
+- Your dissertation is "who you know" and "what you are"
+
+- Ideally your topic should overlap with your Chair's interests, or at least competencies 
+
+- The value of "mini-proposals"
+
+##
+
+**Your Chair**
+
+- Must be a department member with doctoral faculty status
+
+- Have a meeting about expectations and timeliness UP FRONT
+    - Discuss areas where you need more assistance than others
+    - If you are someone who needs deadlines, say so
+    - Your dissertation is one of many projects for your Chair, so you need to manage your expectations
+
+- Ideally your workflow aligns with your Chair's workflow---bad things happen when you like to work one way and your Chair works another!
+
+##
+
+**Your workflow**
+
+- Slow and steady wins the race
+
+- Make your regular meetings with your Chair as productive as possible
+    - Do send drafts 1-2 days **before** the meeting
+    - Get your deliverables in **ON TIME**
+    - Be clear about where you need extra help
+
+- Copy editing services are FINE, editing services are NOT
+    - It's not your Chair's job to fix your writing!
+
+##
+
+**Research design and timelines**
+
+- Plan on 2-3 studies, so layout timelines accordingly
+
+- Qualitative work is acceptable, upon approval of the Chair
+
+- A mixture of exploratory and confirmatory modeling is fine, but exploratory only is not allowed
+
+- Identify costs and budget requirements **EARLY** in the process
+
+##
+
+**Your proposal**
+
+- No more than 50 pages
+
+- Must follow SGS guidelines
+
+- Chapters 1-3 of the dissertation
+
+- This takes the **BULK** of the dissertation work
+
+##
+
+That's it!
