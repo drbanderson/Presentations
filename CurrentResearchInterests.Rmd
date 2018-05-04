@@ -9,7 +9,7 @@ output: html_document
 
 - Dealing with endogeneity
 - Entrepreneurial intentions
-- Increasing transparency and reproducbility in entrepreneurship research
+- Increasing transparency and reproducibility in entrepreneurship research
 - Entrepreneurial orientation
 - Strategic and entrepreneurial leadership
 
@@ -31,7 +31,7 @@ output: html_document
 
 - Crafting a theoretical contribution
 - Identifying a "theoretical gap"
-- Motivating a "theoretcal gap"
+- Motivating a "theoretical gap"
 
 ***
 
@@ -40,5 +40,6 @@ output: html_document
 - R (preferred) or Stata
 - GitHub and markdown
 - Google Docs
+- Transparency and reproducibility
 - Timeliness and expectation management
 
