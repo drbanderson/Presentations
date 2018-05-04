@@ -21,13 +21,14 @@ output: html_document
 - Measurement model evaluation
 - Bayesian hierarchical modeling
 - Endogeneity and identification challenges
-- R
 - Mediation models and causal inference
+- Exploratory analyses
+- Data wrangling
 
 
 ## Things I Am Not Very Good At...
 
-- Crafting a theoretical contribution
+- Crafting a "theoretical contribution"
 - Identifying a "theoretical gap"
 - Motivating a "theoretical gap"
 
