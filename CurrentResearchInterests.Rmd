@@ -13,7 +13,6 @@ output: html_document
 - Entrepreneurial orientation
 - Strategic and entrepreneurial leadership
 
-***
 
 ## Things I Am Good At...
 
@@ -25,7 +24,6 @@ output: html_document
 - R
 - Mediation models and causal inference
 
-***
 
 ## Things I Am Not Very Good At...
 
@@ -33,7 +31,6 @@ output: html_document
 - Identifying a "theoretical gap"
 - Motivating a "theoretical gap"
 
-***
 
 ## Workflow
 
