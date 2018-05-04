@@ -5,4 +5,40 @@ date: "5/4/2018"
 output: html_document
 ---
 
-# 
+## Current Projects
+
+- Dealing with endogeneity
+- Entrepreneurial intentions
+- Increasing transparency and reproducbility in entrepreneurship research
+- Entrepreneurial orientation
+- Strategic and entrepreneurial leadership
+
+***
+
+## Things I Am Good At...
+
+- Multilevel modeling
+- Latent variable structural equation modeling
+- Measurement model evaluation
+- Bayesian hierarchical modeling
+- Endogeneity and identification challenges
+- R
+- Mediation models and causal inference
+
+***
+
+## Things I Am Not Very Good At...
+
+- Crafting a theoretical contribution
+- Identifying a "theoretical gap"
+- Motivating a "theoretcal gap"
+
+***
+
+## Workflow
+
+- R (preferred) or Stata
+- GitHub and markdown
+- Google Docs
+- Timeliness and expectation management
+
