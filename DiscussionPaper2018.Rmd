@@ -1,0 +1,36 @@
+---
+title: "Search strategies for external information and early-stage technology venture performance"
+output: 
+ html_document:
+   theme: cosmo
+---
+**First a brief disclaimer...**
+
+> I'm really an empiricist (total nerd!), so I generally start from the perspective of the measures, assumptions, and specification of the model itself. I'm not an expert in new venture performance, search behaviors, and the interaction with pre-entry marketing experience.
+
+***
+
+# Opportunities for Improvement
+### Measurement model specification
+
+- Absolute fit indices vs. normative fit indices ($\chi^2$ = 19.38, $df$ = 8).
+    - "The Chi-square value should be significant" (p. 6) 
+
+### Structural model specification
+
+- Challenges with the absolute value of revenues
+
+- Addressing measurement error in the structural model (SEM/ML vs. Hierarchical Regression/OLS)
+
+- Estimating the interaction term to deal with the drop in reliability in the constituent term
+
+- With the substantial drop in observations from missing-values, FIML or multiple imputation may be an option to recoup lost observations
+
+- The value of marginal effect visualizations and simple slopes with confidence intervals
+
+### Dealing with endogeneity 
+
+- Self-selection into the survey condition, measurement error, omitted variables (variables correlating with search behaviors and that causally relate to performance)
+
+- IV methods are easily integrated into SEM/ML models; endogeneity of moderator condition is more problematic
+    - Self-reported values of pre-entry experience 
