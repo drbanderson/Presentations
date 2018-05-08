@@ -12,7 +12,7 @@ output: html_document
     - lavaanTable
     - Moderation visualization app
 - Entrepreneurial intentions
-- Unemployment and entrepreneurial activity^1
+- Unemployment and entrepreneurial activity
 - Increasing transparency and reproducibility in entrepreneurship research
 - Entrepreneurial orientation
 - Strategic and entrepreneurial leadership
@@ -40,7 +40,7 @@ output: html_document
 ## Workflow
 
 - R (preferred) or Stata
-- Slack^2
+- Slack
 - GitHub and markdown
 - Google Docs
 - Transparency and reproducibility
