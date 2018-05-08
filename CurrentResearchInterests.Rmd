@@ -9,6 +9,7 @@ output: html_document
 
 - Dealing with endogeneity
 - Entrepreneurial intentions
+- Unemployment and entrepreneurial activity^`**`
 - Increasing transparency and reproducibility in entrepreneurship research
 - Entrepreneurial orientation
 - Strategic and entrepreneurial leadership
@@ -16,9 +17,9 @@ output: html_document
 
 ## Things I Am Good At...
 
-- Multilevel modeling
 - Latent variable structural equation modeling
 - Measurement model evaluation
+- Multilevel modeling
 - Bayesian hierarchical modeling
 - Endogeneity and identification challenges
 - Mediation models and causal inference
@@ -36,6 +37,7 @@ output: html_document
 ## Workflow
 
 - R (preferred) or Stata
+- Slack^`**`
 - GitHub and markdown
 - Google Docs
 - Transparency and reproducibility
