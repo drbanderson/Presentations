@@ -8,6 +8,9 @@ output: html_document
 ## Current Projects
 
 - Dealing with endogeneity
+- Two software development projects
+    - lavaanTable
+    - Moderation visualization app
 - Entrepreneurial intentions
 - Unemployment and entrepreneurial activity^`**`
 - Increasing transparency and reproducibility in entrepreneurship research
