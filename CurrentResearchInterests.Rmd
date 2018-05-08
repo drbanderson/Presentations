@@ -41,6 +41,7 @@ output: html_document
 
 - R (preferred) or Stata
 - Slack
+    - I am **ALWAYS** happy to answer questions, large and small, and there is **never** an *a priori* expectation of coauthorship
 - GitHub and markdown
 - Google Docs
 - Transparency and reproducibility
