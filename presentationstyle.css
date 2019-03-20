@@ -1,0 +1,29 @@
+.reveal section table {
+  margin: 0px auto;
+  border: 0px;
+  border-spacing: 0; 
+}
+.reveal section table th {
+  font-weight: normal; 
+  border: 0px;
+}
+.reveal section table th,
+.reveal section table td {
+  text-align: left;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  border: 0px;
+  border-bottom: none; 
+}
+.reveal section img { 
+  background: none; 
+  border: none; 
+  box-shadow: none; 
+}
+.reveal .slides {
+  text-align: left;
+  box-shadow: none;
+}
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
