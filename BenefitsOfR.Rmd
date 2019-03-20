@@ -1,0 +1,116 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    css: presentationstyle.css
+    theme: simple 
+    transition: slide
+    reveal_options:
+      center: true
+      slideNumber: true
+      history: false
+      progress: true
+      hideAddressBar: true
+---
+## {data-background=#FFFFFF}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center")
+options(knitr.table.format = "html") 
+library(tidyverse)
+```
+
+**Ghent University**
+<br>
+<br>
+Using R, RStudio, and GitHub
+<br>  
+<br>
+<small>
+Brian S. Anderson, Ph.D.  
+Associate Professor | Bloch School of Management  
+Visiting Professor | Entrepreneurship and Innovation Group, Ghent University  
+andersonbri@umkc.edu
+</small>
+
+```{r, echo = FALSE, out.width = "30%", fig.align = "left"}
+knitr::include_graphics("Bloch_Wordmark_Rev_CMYK.png")
+```
+
+## 
+
+I made this presentation with R and R Studio. It's also posted on GitHub, [along with the code](https://github.com/drbanderson/Presentations).
+
+##
+
+You can do all sorts of things with R Studio, [like this](https://www.drbanderson.com).
+
+##
+
+[And this](https://dsom5509.github.io).
+
+##
+
+[And this](https://dsom5509.github.io/FilteringIllustration.html).
+
+##
+
+[And this](https://dsom5509.github.io/Session3TeamDeliverableSolution.pdf).
+
+##
+
+You can also create...
+
+- MS Word documents
+- MS PowerPoint presentations
+- Books
+- Handouts
+
+##
+
+You can also do a little statistics :)
+
+##
+
+It's all about the workflow...
+
+##
+
+```{r, echo = FALSE}
+knitr::include_graphics("DSWorkflowGraphic.png")
+```
+
+##
+
+Why else should you use R and GitHub?
+
+##
+
+Replicability.
+
+##
+
+Reproducibility.
+
+##
+
+Transparency.
+
+##
+
+In my opinion, this is where we are going.
+
+##
+
+Head to https://rstudio.cloud/ and lets do some live coding :)
+
+##
+
+Open Discussion
+
+##
+
+Download this presentation as a .Rmd at [github.com/drbanderson/Presentations](https://github.com/drbanderson/Presentations)  
+
+<br>
+
+View in your browser at [drbanderson.com/presentations/BenefitsOfR.html](https://www.drbanderson.com/presentations/BenefitsOfR.html)
