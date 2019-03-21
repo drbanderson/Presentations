@@ -1,0 +1,139 @@
+---
+title: "Intro to R Live Coding"
+author: "Brian Anderson"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      fig.align = "center", fig.width = 5, fig.height = 3)
+```
+
+## Libraries
+
+How to install a package (library)
+
+```{r, eval = FALSE}
+install.packages("tidyverse")
+```
+
+Once installed, they are always there, but to access the library in a session, you need to load it into memory.
+
+```{r}
+# Load library into memory
+library(tidyverse)
+```
+
+## Simulated Data
+
+There are lots of ways to load data into R---basically, any type of data from any source can find its way into R. For our purposes, we're going to create our own.
+
+Lets create data from a multiple regression model:
+
+$$y = \alpha + \beta_x + \beta_w + \epsilon$$
+
+Lets set some values, and we'll simulate a 200 observation dataset.
+
+$$y = 3.5 + .65_x + .3_w + \mathcal{N}(0,3)$$
+
+```{r}
+set.seed(1)
+obs <- 200
+
+df <- tibble(x = rnorm(obs, 0, 2),
+             w = rnorm(obs, 0, 3))
+
+df
+```
+
+Next lets create our outcome variable:
+
+```{r}
+# Define our model parameters 
+a <- 3.5
+b_x <- .65
+b_w <- .3
+
+df <- df %>% 
+  mutate(y = a + (b_x * x) + (b_w * w) + rnorm(obs, 0, 3))
+
+df
+```
+
+## Basic Visualizations
+
+```{r}
+ggplot(data = df, aes(y = y, x = x)) +
+  geom_point() +
+  geom_smooth(method = "lm") + 
+  geom_smooth(method = "loess", color = "red") +  
+  theme_bw()
+```
+
+## Linear Model
+
+```{r}
+y.model <- lm(y ~ x + w, data = df)
+summary(y.model)
+```
+
+## Regression Diagnostics
+
+### Install a new package
+
+```{r, eval = FALSE}
+install.packages("ggfortify")
+```
+
+
+```{r}
+library(ggfortify)
+autoplot(y.model)
+```
+
+## Formatting Results
+
+### Tidying Model Results
+
+```{r, eval = FALSE}
+install.packages("broom")
+```
+
+Creating a manipulable dataframe
+
+```{r}
+library(broom)
+y.tidy <- tidy(y.model)
+y.tidy
+```
+
+### Formatting Results Tables
+
+```{r, eval = FALSE}
+install.packages("sjPlot")
+```
+
+Create an html table for copy and pasting...
+
+```{r, eval = FALSE}
+library(sjPlot)
+tab_model(y.model)
+```
+
+## Summary Statistics
+
+A note on correlation matrices.
+
+```{r, eval = FALSE}
+install.packages("skimr")
+```
+
+### Descriptive statistics
+
+```{r}
+library(skimr)
+skim(df)
+```
+

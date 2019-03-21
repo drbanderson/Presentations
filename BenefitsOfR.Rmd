@@ -105,6 +105,46 @@ Head to https://rstudio.cloud/ and lets do some live coding :)
 
 ##
 
+Git, GitHub, and version control.
+
+##
+
+Think of GitHub as both a collaboration tool, and as a backup tool. 
+
+##
+
+If you are not familiar with writing code, GitHub is going to seem pretty foreign, and potentially not worth the trouble.
+
+##
+
+My argument is that it is worth the trouble, because it helps enable workflow...
+
+```{r, echo = FALSE}
+knitr::include_graphics("DSWorkflowGraphic.png")
+```
+
+##
+
+How many of you have a folder on your computer that looks like this...
+
+- 12Feb2018Data_Original.dta
+- 12Feb2018Data_Working.dta
+- 15Feb2018Data_JaneModified_V1.dta
+- 15Feb2018Data_JaneModified_V2.dta
+- 15Feb2018Data_V3_USETHIS.dta
+- 20Feb2018Data_V4_DONTUSE.dta
+- ...
+
+##
+
+For researchers, particularly when using R (or related platforms), GitHub is a way for research teams to collaborate on analyses (and writing papers) while keeping things organized and integrated.
+
+##
+
+Head over to [github.com/drbanderson](https://github.com/drbanderson) 
+
+##
+
 Open Discussion
 
 ##

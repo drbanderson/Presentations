@@ -204,4 +204,8 @@ Open Discussion
 
 ##
 
-You can download this presentation as a .Rmd at [github.com/drbanderson/Presentations](https://github.com/drbanderson/Presentations), or view in your browser at [drbanderson.com/presentations/PublishingInJBV.html](https://www.drbanderson.com/presentations/PublishingInJBV.html)
+Download this presentation as a .Rmd at [github.com/drbanderson/Presentations](https://github.com/drbanderson/Presentations)  
+
+<br>
+
+View in your browser at [drbanderson.com/presentations/PublishingInJBV.html](https://www.drbanderson.com/presentations/PublishingInJBV.html)
