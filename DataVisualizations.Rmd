@@ -1,0 +1,266 @@
+---
+title: "Data Visualizations"
+author: "Brian Anderson"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      fig.align = "center", fig.width = 5, fig.height = 3)
+```
+
+## Load Libraries
+
+```{r}
+library(tidyverse)
+library(broom)
+library(margins)
+```
+
+## Simulated Data
+
+Lets set some values, and we'll simulate a 500 observation dataset.
+
+$$y = 2.5 + .65x + 1.5m + .85xm + .5c + \mathcal{N}(0,3)$$
+
+```{r}
+# Set our (quasi) random number generator seed
+set.seed(1)
+
+# Set our number of observations
+obs <- 500
+
+# Define our model parameters 
+a <- 2.5
+b_x <- .65
+b_m <- 1.5
+b_xm <- .85
+b_c <- .5
+
+df <- tibble(x = rnorm(obs, 0, 2),  # Gaussian (normal) distribution
+             m = rbinom(obs, 1, .4),  # Bernulli (binomial) distribution
+             c = rpois(obs, 15),  # Poisson distribution
+             y = a + (b_x * x) + (b_m * m) + (b_xm * (x * m)) + (b_c * c) + 
+               rnorm(obs, 0, 3))
+
+df
+```
+
+## Interaction Model
+
+```{r}
+y.model <- lm(y ~ x * m + c, data = df)
+summary(y.model)
+```
+
+## Basic Visualizations
+
+### Bar Chart
+
+```{r}
+ggplot(data = df, aes(x = m)) +
+  geom_bar()
+```
+
+### Data summary
+
+```{r}
+df %>% 
+  count(m)
+```
+
+## Tidy Bar Chart
+
+```{r}
+tidy.box <- ggplot(data = df %>% 
+                     mutate(m = as_factor(m)), 
+                   aes(x = m, fill = m)) +
+  geom_bar() + 
+  geom_text(stat = 'count', aes(label = ..count..), vjust = 2) + 
+  scale_x_discrete(breaks = c("0", "1"),
+                   labels = c("Women", "Men")) + 
+  scale_fill_discrete(name = "Gender",
+                      breaks = c("0", "1"),
+                      labels = c("Women", "Men")) + 
+  labs(title = "Sample Skews Towards Women",
+       subtitle = "N = 500",
+       y = "Number of Observations",
+       x = "") + 
+  theme_bw()
+
+tidy.box
+```
+
+### Save the Plot
+
+```{r}
+ggsave("TidyBox.png", tidy.box, width = 6, height = 4)
+```
+
+## Scatterplot
+
+```{r}
+ggplot(data = df, aes(y = y, x = x)) + 
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+## Bubble Chart
+
+This incorporates the dichotomous mediator...
+
+```{r}
+ggplot(data = df %>% 
+         mutate(m = as_factor(m)),
+       aes(y = y, x = x, size = m)) + 
+  geom_point(alpha = .1) + 
+  theme_bw()
+```
+
+## Plotting Simnple Slopes
+
+### Create New Dataframe
+
+```{r}
+# M = 0 condition
+m.0 <- tibble(x = seq(min(df$x), max(df$x), .1),
+              m = 0)
+
+# M = 1 condition
+m.1 <- tibble(x = seq(min(df$x), max(df$x), .1),
+              m = 1)
+
+# Bind the dataframes together
+m.df <- bind_rows(m.0, m.1) %>% 
+  mutate(c = mean(df$c))
+
+m.df
+```
+
+### Create predicted values
+
+```{r}
+y.pred <- augment(y.model, newdata = m.df)
+y.pred
+```
+
+### Quantify Uncertainty
+
+```{r}
+y.pred <- y.pred %>% 
+  mutate(lower.ci = .fitted - (1.96 * .se.fit),
+         upper.ci = .fitted + (1.96 * .se.fit)) %>% 
+  mutate_if(is.numeric, funs(round(., 2)))
+
+y.pred
+```
+
+### Build the Plot
+
+```{r}
+ggplot(data = y.pred %>% 
+         mutate(m = as_factor(m)), 
+       aes (y = .fitted, x = x, group = m)) + 
+  geom_line(aes(linetype = m)) + 
+  geom_ribbon(alpha = .2, aes(ymin = lower.ci, ymax = upper.ci)) +
+  scale_linetype_discrete(name = "Gender",
+                          breaks = c("1", "0"),
+                          labels = c("Men", "Women")) + 
+  labs(title = "Y Increases More Among Men As X Increases",
+       subtitle = "N = 500",
+       y = "Predicted Values of Y",
+       x = "Range of Meaningful Values of X",
+       caption = "95% Confidence Interval in Grey") + 
+  theme_bw()
+```
+
+## Multilevel Data
+
+```{r}
+rnd.df <- read_csv("https://www.drbanderson.com/data/FirmRND.csv")
+rnd.df
+```
+
+Wrangling...
+
+```{r}
+# Industries...
+# 3570 - Computer & Office Eqpmt
+# 3571 - Electronic Computers
+# 3572 - Computer Storage Devices
+# 3576 - Computer Communications Eqpmt
+# 3577 - Computer Peripheral Eqpmt
+# 3578 - Calculating & Accounting Machines
+# 3579 - Office Machines
+
+rnd.df <- rnd.df %>% 
+  mutate(SICCode = as_factor(SICCode))
+```
+
+What are we looking at?
+
+```{r}
+rnd.df %>% 
+  summarise(NumberFirms = n_distinct(FirmID))
+```
+
+```{r}
+rnd.df %>% 
+  distinct(Year)
+```
+
+Lets create a couple of variables...
+
+```{r}
+rnd.df <- rnd.df %>% 
+  mutate(ROS = 100 * (NetIncome / Revenue),
+         RNDIntensity = 100 * (RND / Revenue)) %>% 
+  filter(ROS > -50,
+         RNDIntensity < 100)  # Eliminate outliers
+```
+
+## Visualizations
+
+### R&D Intensity Over Time By Firm
+
+```{r}
+ggplot(rnd.df, aes(y = RNDIntensity, x = Year)) + 
+  geom_line(aes(group = FirmID), alpha = 1/10) + 
+  geom_smooth(method = "loess", se = FALSE)
+```
+
+### ROS Over Time By Firm
+
+```{r}
+ggplot(rnd.df, aes(y = ROS, x = Year)) + 
+  geom_line(aes(group = FirmID), alpha = 1/10) + 
+  geom_smooth(method = "loess", se = FALSE)
+```
+
+### ROS & R&D By Industry
+
+```{r}
+ggplot(rnd.df, aes(y = ROS, x = RNDIntensity)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") + 
+  facet_wrap(~ SICCode)
+```
+
+### Data Summaries
+
+```{r}
+ggplot(data = rnd.df %>% 
+         group_by(SICCode, Year) %>% 
+           summarise(meanRND = median(RNDIntensity)),
+       aes(y = meanRND, x = Year, group = SICCode)) + 
+  geom_line(aes(linetype = SICCode)) + 
+  scale_linetype_discrete(name = "SIC Code") + 
+  labs(title = "Median R&D Intensity of 35x Industries",
+       subtitle = "2013 - 2017",
+       y = "Median R&D Intensity",
+       x = "") + 
+  theme_bw()
+```
+
