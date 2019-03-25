@@ -97,7 +97,7 @@ Transparency.
 
 ##
 
-In my opinion, this is where we are going.
+In my opinion, this is where the field is going.
 
 ##
 
@@ -117,7 +117,7 @@ If you are not familiar with writing code, GitHub is going to seem pretty foreig
 
 ##
 
-My argument is that it is worth the trouble, because it helps enable workflow...
+My argument is that it is worth the trouble, because it enables workflow...
 
 ```{r, echo = FALSE}
 knitr::include_graphics("DSWorkflowGraphic.png")
@@ -125,7 +125,7 @@ knitr::include_graphics("DSWorkflowGraphic.png")
 
 ##
 
-How many of you have a folder on your computer that looks like this...
+How many of you have a folder on your computer with contents that look like this...
 
 - 12Feb2018Data_Original.dta
 - 12Feb2018Data_Working.dta
