@@ -126,14 +126,15 @@ tab_model(y.model)
 
 A note on correlation matrices.
 
+### Descriptive statistics
+
 ```{r, eval = FALSE}
 install.packages("skimr")
 ```
-
-### Descriptive statistics
 
 ```{r}
 library(skimr)
 skim(df)
 ```
+
 
