@@ -21,8 +21,8 @@ set.seed(1)
 obs <- 1000
 z <- rnorm(obs, 0, 1)
 
-end.df <- tibble(x = (.25 * z) + rnorm(obs, 0, 1),
-                 y = (.0001 * x) + (.3 * z) + rnorm(obs, 0, 1))
+end.df <- tibble(x = (.25 * z) + (.75 * (rnorm(obs, 0, 1))),
+                 y = (.01 * x) + (.3 * z) + rnorm(obs, 0, 1))
 ```
 
 ## Correct Model
