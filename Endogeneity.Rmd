@@ -1,0 +1,39 @@
+---
+title: "Endogeneity"
+author: "Brian Anderson"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+## Libraries
+
+```{r}
+library(tidyverse)
+```
+
+## Create Data
+
+```{r}
+set.seed(1)
+obs <- 1000
+z <- rnorm(obs, 0, 1)
+
+end.df <- tibble(x = (.25 * z) + rnorm(obs, 0, 1),
+                 y = (.0001 * x) + (.3 * z) + rnorm(obs, 0, 1))
+```
+
+## Correct Model
+
+```{r}
+summary(lm(y ~ x + z, data = end.df))
+```
+
+## Endogeneity Model
+
+```{r}
+summary(lm(y ~ x, data = end.df))
+```
+
