@@ -118,21 +118,25 @@ knitr::include_graphics("ResearchUsefulnessGraphic.png")
 
 Reading my very---very---cloudy crystal ball...
 
-##
+**DISCLAIMER**
 
-The bar will get exponentially higher to publish theory-testing work
-
-##
-
-There will be a meaningful shift to mixed-methods research designs
+The following slides are *my* opinion, and do not reflect the official editorial policy of JBV. In fact, I would guess that would get substantially different perspectives on these topics across JBV Editors.
 
 ##
 
-Survey-only research will fade (but not go away)
+The bar will get exponentially higher to publish theory-testing work.
 
 ##
 
-*Exploratory* research will rise in prominence and sophistication
+There will be a meaningful shift to mixed-methods research designs.
+
+##
+
+Survey-only research will fade (but not go away).
+
+##
+
+*Exploratory* research will rise in prominence and sophistication.
 
 ##
 
