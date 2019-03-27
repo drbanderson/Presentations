@@ -118,9 +118,11 @@ knitr::include_graphics("ResearchUsefulnessGraphic.png")
 
 Reading my very---very---cloudy crystal ball...
 
+##
+
 **DISCLAIMER**
 
-The following slides are *my* opinion, and do not reflect the official editorial policy of JBV. In fact, I would guess that would get substantially different perspectives on these topics across JBV Editors.
+The following slides are *my* opinion, and do *not* reflect the official editorial policy of JBV. In fact, you are likely to get substantially different perspectives on these topics across JBV Editors.
 
 ##
 
