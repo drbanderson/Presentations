@@ -19,16 +19,15 @@ options(knitr.table.format = "html")
 library(tidyverse)
 ```
 
-**Ghent University**
+**Leadership Today**
 <br>
 <br>
-Publishing in *Journal of Business Venturing* and Trends in Entrepreneurship Research
+Strategic Thinking Under Extreme Uncertainty
 <br>  
 <br>
 <small>
-Brian S. Anderson, Ph.D.  
-Associate Professor | Bloch School of Management  
-Visiting Professor | Entrepreneurship and Innovation Group, Ghent University  
+Dr. Brian S. Anderson  
+Associate Dean & Associate Professor | Bloch School of Management  
 andersonbri@umkc.edu
 </small>
 
@@ -38,139 +37,35 @@ knitr::include_graphics("Bloch_Wordmark_Rev_CMYK.png")
 
 ## 
 
-With the growth of entrepreneurship doctoral programs, we are seeing a wave of new assistant professors with entrepreneurship as their primary discipline.
 
-##
+How do you separate the strategically important from the irrelevant in a sea of noise and cloud of uncertainty? How do you take the strategically relevant and use those insights to make better decisions in a rapidly changing environment? This session will focus on using systems thinking and Bayesian logic as a framework improve our strategic thinking. Through a large group session and small group breakout rooms, we will explore:
 
-As a field, we are as multi-disciplinary, multi-functional, multi-contextual, and multi-level as ever before. 
+How to be better consumers of data and models to separate the signal from the noise
+How to incorporate those signals into a picture of a strategic situation and identify sources of future uncertainty, to make better strategic decisions in the moment.
 
 
-- 2017 5-year journal impact factor of 9.67
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
-- Ranked 10th (out of 140 journals) by SSCI fo
+1. Decide on the performance metric that matters the most right now
+2. Understand the difference between possible and probable
+3. Relentlessly focus on causal adjacency
+4. Embrace what you can control, and account for what you cannot
 
-*"The entrepreneurial orientation-performance link is not a big enough conversation in the strategy literature to warrant a paper discussing causal inference. I noticed that much of your reference list cites entrepreneurship papers. I suspect your paper has a better fit with a specialist entrepreneurship journal as opposed to a general interest strategy journal such as SMJ."*
+Fly fishing rod investment and the pandemic
+(dollars are spent, and product is already on its way)
 
-##
+breakout ideas...
 
-```{r, echo = FALSE}
-knitr::include_graphics("JBVTalkingPoints.png")
-```
+1. Brainstorm the performance metric that matters
+2. What has likely changed, and what is in our control?
 
-##
 
-**Myths about JBV**
 
-- "It's just a specialty journal"
-- JBV doesn't publish review articles
-- There is a bias against qualitative research
-- It's a clic
 
-##
 
-JBV (and entrepreneurship research) moving forward...
-
-##
-
-Leading [the entrepreneurship conversation](https://doi.org/10.1016/j.jbusvent.2019.02.004).
-
-##
-
-[Increasing rigor](https://www.drbanderson.com/papers/Anderson_etal_2019.pdf), but not at the expense of asking interesting and relevant questions.
-
-##
-
-```{r, echo = FALSE}
-knitr::include_graphics("ResearchUsefulnessGraphic.png")
-```
-
-##
-
-Reading my very---very---cloudy crystal ball...
-
-##
-
-**DISCLAIMER**
-
-The following slides are *my* opinion, and do *not* reflect the official editorial policy of JBV. In fact, you are likely to get substantially different perspectives on these topics across JBV Editors.
-
-##
-
-The bar will get exponentially higher to publish theory-testing work.
-
-##
-
-There will be a meaningful shift to mixed-methods research designs.
-
-##
-
-Survey-only research will fade (but not go away).
-
-##
-
-*Exploratory* research will rise in prominence and sophistication.
-
-##
-
-If I could wave my wand, what would I change?
-
-- Ban SPSS
-- Require code sharing (and ideally data)
-- Require a replication
-- The p-value would go away completely
-
-##
-
-The biggest change I would make?
-
-The phrase "make a theoretical contribution" goes away. Forever. Period dot. 
-
-##
-
-Some practical tips for submitting to JBV and other top entrepreneurship journals...
-
-##
-
-"Making a theoretical contribution" (I hate even saying that phrase!) is, in my opinion, a function of the quality of writing and the quality of the argumentation.
-
-##
-
-Want to improve your chances for an R&R? Invest in being a better writer.
-
-##
-
-- King, S., 2002. On Writing. Simon and Schuster, New York, NY.
-- Sword, H., 2017. Air & Light & Time & Space: How Successful Academics Write. Harvard University Press, Cambridge, MA.
-- Sword, H., 2012. Stylish Academic Writing. Harvard University Press, Cambridge, MA.
-- Zinsser, W., 2006. On Writing Well, 30th Anniversary Edition: The Classic Guide to Writing Nonfiction. Harper Collins, New York, NY.
-
-##
-
-It's better to tell a simple story well than a complicated story poorly.
-
-##
-
-Understand the reviewer disturbance term, particularly when it comes to research design and data science.
-
-##
-
-Selling reviewers is important, selling the editor is critical.
-
-##
 
 
 
 ##
 
-Download this presentation as a .Rmd at [github.com/drbanderson/Presentations](https://github.com/drbanderson/Presentations)  
+Join us for our next session with Dr. Brent Never on **Creating a data culture in uncertain times** on Thursday May 14th at 8:30. 
 
-<br>
-
-View in your browser at [drbanderson.com/presentations/PublishingInJBV.html](https://www.drbanderson.com/presentations/PublishingInJBV.html)
+Register at https://bloch.umkc.edu/executive-education/leadership-today/. 
