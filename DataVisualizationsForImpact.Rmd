@@ -1,0 +1,61 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    css: presentationstyle.css
+    theme: simple 
+    transition: slide
+    reveal_options:
+      center: true
+      slideNumber: true
+      history: false
+      progress: true
+      hideAddressBar: true
+---
+## {data-background=#FFFFFF}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center")
+options(knitr.table.format = "html") 
+library(tidyverse)
+```
+
+**Bloch Executive Education**
+<br>
+<br>
+Effective Data Visualizations For Persuasion
+<br>  
+<br>
+<small>
+Dr. Brian S. Anderson  
+Associate Dean & Associate Professor | Bloch School of Management  
+andersonbri@umkc.edu
+</small>
+
+```{r, echo = FALSE, out.width = "30%", fig.align = "left"}
+knitr::include_graphics("Bloch_Wordmark_Rev_CMYK.png")
+```
+
+## 
+
+
+1. Frame the problem
+
+2. Provide supporting data
+
+3. Visualize the ROI
+
+
+```{r}
+persusation_data
+```
+
+
+
+
+
+
+##
+
+Stay sharp with insights from the Bloch Idea Bar!
+
+bloch.umkc.edu/idea-bar

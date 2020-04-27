@@ -27,7 +27,7 @@ Strategic Thinking Under Extreme Uncertainty
 <br>
 <small>
 Dr. Brian S. Anderson  
-Associate Dean & Associate Professor | Bloch School of Management  
+Executive Associate Dean & Associate Professor   
 andersonbri@umkc.edu
 </small>
 
@@ -37,32 +37,89 @@ knitr::include_graphics("Bloch_Wordmark_Rev_CMYK.png")
 
 ## 
 
+How do you isolate the strategically relevant within a sea of noise and extreme uncertainty?
 
-How do you separate the strategically important from the irrelevant in a sea of noise and cloud of uncertainty? How do you take the strategically relevant and use those insights to make better decisions in a rapidly changing environment? This session will focus on using systems thinking and Bayesian logic as a framework improve our strategic thinking. Through a large group session and small group breakout rooms, we will explore:
+##
 
-How to be better consumers of data and models to separate the signal from the noise
-How to incorporate those signals into a picture of a strategic situation and identify sources of future uncertainty, to make better strategic decisions in the moment.
+*Extreme uncertainty* is an environment where the direction, mangintude, and timing of change are functionally impossible to predict, as are the consequences of those changes.
 
+##
+
+Challenges to strategic decision making under *extreme uncertainty*...
+
+* Signal-to-noise ratio
+* Traditional market research and data collection is **exceptionally** difficult
+* Harder to predict competitive responses
+* Emerging constraints and shifting opportunities
+
+##
+
+How much will COVID-19 reshape the market for undergraduate business education in **Fall 2021**?
+
+##
+
+How Bloch is approaching this problem...
 
 1. Decide on the performance metric that matters the most right now
 2. Understand the difference between possible and probable
-3. Relentlessly focus on causal adjacency
-4. Embrace what you can control, and account for what you cannot
+3. Embrace what you can control, and account for what you cannot
 
-Fly fishing rod investment and the pandemic
-(dollars are spent, and product is already on its way)
+##
 
-breakout ideas...
+Step 1 -- Decide on the performance metric that matters the most right now
 
-1. Brainstorm the performance metric that matters
-2. What has likely changed, and what is in our control?
+* Putting a temporal bound on the problem
+* Relentlessly focusing on causal adjacency
 
+## 
 
+Breakout 1 -- What is the most important metric for univerisities to understand how COVID-19 is changing the undergraduate market in Fall 2021?
 
+##
 
+Discussion and agreement 
 
+##
 
+Step 2 -- Understand the difference between possible and probable
 
+* This is a critical distinction, and subject to biases
+* The ability to contextualize probabilities focuses attention on highly probable, and ideally important, variables
+
+##
+
+Breakout 2 -- What are things in the environment for undergraduate education that are likely to happen **and if they did happen**, would cause a substantial shift for Fall 2021?
+
+##
+
+Discussion and agreement 
+
+##
+
+Step 3 -- Embrace what you can control, and account for what you cannot
+
+* To what extent are you able to shape---not control, but shape---your future value proposition?
+* What are the variables you cannot control and what is the probability they will happen and effect your value proposition?
+
+##
+
+How much of a university's value proposition to undergraduates depends on the educational experience by itself, relative to other aspects of the student experience (living on-campus, athletics, student organizations, and so forth)?
+
+##
+
+Discussion
+
+##
+
+If you are not in a position to shape your value proposition in preperation for uncertainty subsiding, pivoting may be a viable---and crucial---option.
+
+##
+
+Recap for improving strategic decision making under extreme uncertainty...
+
+1. Decide on the performance metric that matters the most right now
+2. Understand the difference between possible and probable
+3. Embrace what you can control, and account for what you cannot
 
 ##
 
